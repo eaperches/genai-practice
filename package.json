@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
@@ -23,18 +24,22 @@
   },
   "dependencies": {
     "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "openai": "^6.31.0",
-    "pdf-parse": "^2.4.5"
+    "fastify": "^5.8.2",
+    "multer": "^2.1.1",
+    "openai": "^6.32.0",
+    "pdf-parse": "^2.4.5",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
-    "@types/node": "^20",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^20.19.37",
     "eslint": "^9.39.4",
     "globals": "^17.4.0",
     "husky": "^9.1.7",
     "jiti": "^2.6.1",
     "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.1"
   }
 }

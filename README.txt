@@ -1,3 +1,5 @@
 Pipeline:
-PDF -> text -> chunks -> embeddings -> vector DB -> prompt -> embedding -> retrieve relevant chunks -> LLM -> answer
+
+Codebase → chunks → embeddings → vector DB
+User question → embedding → similarity search → relevant code → LLM → answer
 
