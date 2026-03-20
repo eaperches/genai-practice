@@ -1,5 +1,8 @@
-Pipeline:
+Ingestion:
+Repo → parse files → chunk → embed → store
 
-Codebase → chunks → embeddings → vector DB
-User question → embedding → similarity search → relevant code → LLM → answer
+Retrieval:
+User query → embed → search vector DB → get top chunks
 
+Generation:
+Chunks + question → prompt → LLM → answer
